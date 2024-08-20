@@ -46,6 +46,7 @@ public class LoggingAspectTest {
 
     @Test
     public void testLogResponseDisabled() throws Exception {
+
         loggingProperties.setLogResponse(false);
 
         mockMvc.perform(get("/test-endpoint"))
