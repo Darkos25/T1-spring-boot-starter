@@ -31,7 +31,7 @@ public class LoggingAspectTest {
     @Test
     public void testLogRequestAndResponse() throws Exception {
 
-        ResultActions resultActions = mockMvc.perform(get("/test-endpoint"))
+        mockMvc.perform(get("/test-endpoint"))
                 .andExpect(status().isNotFound());
     }
 
