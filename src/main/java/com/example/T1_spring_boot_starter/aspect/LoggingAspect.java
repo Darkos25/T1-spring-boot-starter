@@ -16,6 +16,9 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 
 import java.util.Enumeration;
 
+/**
+ * Aspect for logging HTTP requests and responses.
+ */
 @Aspect
 @Component
 public class LoggingAspect {
